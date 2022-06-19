@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A basic calculator | by Luca Lagos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <form action="" name="calc">
+        <input
+          type="text"
+          name="number"
+          class="value"
+          id=""
+          placeholder="Empty"
+          readonly
+        />
+        <span class="num clear" onclick="calc.number.value = ''">C</span>
+        <span class="num" onclick="document.calc.number.value += '/'">/</span>
+        <span class="num" onclick="document.calc.number.value += '*'">*</span>
+        <span class="num" onclick="document.calc.number.value += '7'">7</span>
+        <span class="num" onclick="document.calc.number.value += '8'">8</span>
+        <span class="num" onclick="document.calc.number.value += '9'">9</span>
+        <span class="num" onclick="document.calc.number.value += '-'">-</span>
+        <span class="num" onclick="document.calc.number.value += '4'">4</span>
+        <span class="num" onclick="document.calc.number.value += '5'">5</span>
+        <span class="num" onclick="document.calc.number.value += '6'">6</span>
+        <span class="num plus" onclick="document.calc.number.value += '+'"
+          >+</span
+        >
+        <span class="num" onclick="document.calc.number.value += '1'">1</span>
+        <span class="num" onclick="document.calc.number.value += '2'">2</span>
+        <span class="num" onclick="document.calc.number.value += '3'">3</span>
+        <span class="num" onclick="document.calc.number.value += '0'">0</span>
+        <span class="num" onclick="document.calc.number.value += '00'">00</span>
+        <span class="num" onclick="document.calc.number.value += '.'">.</span>
+        <span
+          class="num equal"
+          onclick="document.calc.number.value = eval(calc.number.value)"
+          >=</span
+        >
+      </form>
+    </main>
+    <footer>
+      Developed by <a href="https://luca-lagos.github.io/" target="_blank">Luca Lagos</a>
+    </footer>
+  </body>
+</html>
